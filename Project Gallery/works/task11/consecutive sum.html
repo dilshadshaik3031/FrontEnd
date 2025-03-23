@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color:brown;
+                margin: 30px;
+            }
+           #sum
+           {
+            color:white;
+            font-size: 20px;
+            
+            font-family: 'Times New Roman', Times, serif;
+           }
+        </style>
+    </head>
+
+    <body>
+        <input id ="input_a" placeholder="Enter A"/>
+        <input id="input_b" placeholder="Enter B"/>
+
+        <button onclick="calculate();">Calculate</button>
+        <br><br>
+        <div id = "sum"></div>
+
+        <script>
+            function calculate() {
+                let a = parseInt(document.getElementById("input_a").value);
+                let b = parseInt(document.getElementById("input_b").value);
+
+                
+                let sum = 0;
+                for (let i = a; i <= b; i++) {
+                    sum += i;
+                }
+
+                document.getElementById("sum").innerText = "Sum: " + sum;
+                }
+        </script>
+    </body>
+</html>

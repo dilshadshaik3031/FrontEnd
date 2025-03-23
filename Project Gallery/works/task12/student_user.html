@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+        <script src="student_user.js"></script>
+        <style>
+           
+           * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body styling */
+            body {
+                background-color: aquamarine;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Make sure content is vertically centered */
+                text-align: center;
+            }
+
+            /* Styling for the heading */
+            h1 {
+                font-style: oblique;
+                color: darkmagenta;
+                margin-bottom: 20px;
+            }
+
+            /* Div for the student details */
+            #div {
+                font-style: italic;
+                color: darkmagenta;
+                margin-top: 20px;
+                padding: 10px;
+                border: 2px solid darkmagenta;
+                width: 80%;
+                max-width: 400px;
+                background-color: #fff;
+            }
+
+            /* Styling for input fields */
+            input {
+                margin: 10px 0;
+                padding: 10px;
+                width: 250px;
+                font-size: 16px;
+                border: 2px solid darkmagenta;
+                border-radius: 5px;
+            }
+
+            /* Button styling */
+            button {
+                background-color: darkmagenta;
+                color: white;
+                font-size: 16px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 10px;
+            }
+
+            button:hover {
+                background-color: purple; /* Darker shade on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Details..</h1>
+        <input id="id" placeholder="Enter the student ID"><br><br>
+       
+        <input id="name" placeholder="Enter the student name"><br><br>
+        
+        <input id="major" placeholder="Enter student major"><br><br>
+        <button id = "button" onclick="insert();">Update Student Details..</button>
+        <button id="button" onclick="student_fun();">Click for student Info</button>
+       
+        <div id="div"></div>
+    </body>
+</html>

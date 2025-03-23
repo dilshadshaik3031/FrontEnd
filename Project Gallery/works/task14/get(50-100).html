@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Random Function usage
+    </title>
+    <style>
+        *
+        {
+            background-color:crimson;
+        }
+        #h2
+        {
+            font-size: large;
+            font-family:'Times New Roman', Times, serif;
+        }
+        #ran
+        {
+            color: black;
+            font-style: italic;
+            font:bold;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>Random Function using Floor</h2>
+        <p id = "ran"></p>
+        <script>
+            let min = 50;
+            let max = 100;
+            let x = Math.floor(Math.random() * (max - min + 1)) + min;
+            console.log(x);  
+            document.getElementById("ran").innerHTML = `Random number: ${x}`; 
+        </script>
+    </body>
+</html>

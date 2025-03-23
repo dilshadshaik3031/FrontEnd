@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "grade.js">   </script>
+     </head>
+     <style>
+        h1 {
+            color: darkmagenta;
+
+        }
+        *
+        {
+            background-color:cyan;
+        }
+        #score
+        {
+            height: 30px;
+            color: purple;
+            font-size: large;
+        }
+       body {
+        font-size: 30px;
+       }
+
+     </style>
+     <body>
+        <h1>Grading Scale</h1>
+        <input id="score" placeholder="Enter score point" onkeyup="grade();"/><br><br>
+        Your grade is: <span id="grade_span"></span>
+    </body>
+</html>
