@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "stack.js">   </script>
+     </head>
+     <style>
+        h3 {
+            color:purple;
+        }
+        *
+        {
+            background-color: antiquewhite;
+        }
+        #score
+        {
+            height: 30px;
+            color: purple;
+        }
+        body {
+        font-size: 30px;
+       }
+       button {
+        height: 30px;
+       }
+     </style>
+     <body>
+        <h3>Grading Scale</h3>
+        <input id="score" placeholder="Enter score point" onkeyup="grade();"/>
+        <button id = "addTask" onclick="addTask()">Add Task</button>
+        <button id = "undoTask" onclick="undoTask()">Undo Task</button>
+        <br><br>
+        <h3>Process Line...</h3>
+        Your grade is: <span id="stackDisplay"></span>
+        
+        
+    </body>
+</html>

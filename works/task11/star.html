@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+        <style>
+            #star_div
+            {
+                background-color:lavender;
+                font-size: 20px;
+                color:black;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <input id="user_input" placeholder="Enter size" onkeyup="generate_shape();"/>
+        <div id = "star_div"></div>
+        <script>
+            let colors = ["red", "blue", "green","black"];
+            let idx = 0;
+            let size = colors.length;
+         
+            function generate_shape()
+            {
+                
+        let n = parseInt(document.getElementById("user_input").value);
+        if (isNaN(n) || n < 1) {
+                    document.getElementById("star_div").innerHTML = "";  
+                    return;
+                }
+        let i = 0;
+        let text = "";
+        idx = n % colors.length; 
+
+                let color = colors[idx];
+        while (i <= n) {
+            let color = colors[idx];
+            text += `<span style="color:${color}">`;
+            let j = 0; 
+                     while (j < i) {
+                        text += "* ";
+                        
+                        j++; 
+                    }
+                    text += "</span><br>";
+                    
+                    i++; 
+                    
+                }
+
+                document.getElementById("star_div").innerHTML = text;
+       
+       
+            }
+        </script>
+            </body>
+</html>
